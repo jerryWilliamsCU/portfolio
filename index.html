@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <head>
-    <!-- build:css css/main.css -->
+    <!--css/main.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-    <link rel="stylesheet" href="css/styles.css"/>
-    <!-- endbuild -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- end css-->
     <title>AirThere</title>
 </head>
 
@@ -20,14 +21,13 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        </button>       
+        <div class="navbar-collapse collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-4">
                 <li class="nav-item">
                     <a class="nav-link" data-value="about" href="#about">About</a> </li>
                 <li class="nav-item">
-                    <a class="nav-link " data-value="savings" href="#savings">Savings</a>
+                    <a class="nav-link " data-value="services" href="#savings">Services</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link " data-value="reviews" href="#reviews">Reviews</a> </li>
@@ -36,16 +36,22 @@
         </div>
     </nav>
 
+    <!-- header section -->
     <header class="header">
         <div class="overlay">
         </div>
         <div class="container">
             <div class="description">
-                <h1> Hello ,Welcome To My official Website
-                    <p> cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                        culpa qui officia deserunt mollit anim id est laborum.
+                <h1> Hello, Welcome To AirThere.com!
+                    <p> When it comes to air conditioning, there's no substitute for experience, and we have over 20
+                        years experience servicing and installing air conditioning systems for homeowners in the greater
+                        Orlando area.
+                        <br>
+                        <br>
+                        We're fully licensed and insured -- and we service all makes and models. Call us
+                        for all your air conditioning and heating needs.
                     </p>
-                    <button class="btn btn-outline-secondary btn-lg">See more</button></h1>
+                    <a href="#contact" class="btn btn-secondary btn-lg" role="button">Request Service</a></h1>
             </div>
         </div>
     </header>
@@ -63,13 +69,15 @@
 
                     <h3>Bob Lomax</h3>
                     <p>
-                        ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
+                        I have lived and worked in Central Florida since 1981. I've seen many changes in the air
+                        conditioning business, some good and some not so good. It seems that the old adage "pride in
+                        workmanship" was being lost to the bottom line and marketing and sales were driving the business
+                        rather than customer service and quality. It is my belief that if you take care of the customer,
+                        the bottom line will take care of itself. It is with this one simple idea that AirThere was
+                        founded. AirThere offers personal low cost service and installations, where everything from
+                        design and permits to sweeping up afterwards is done by the contractor. By working directly with
+                        the homeowner we are able to cut overhead and still provide high quality workmanship by a master
+                        technician.</p>
                 </div>
             </div>
         </div>
@@ -79,16 +87,32 @@
     <!-- Reviews section -->
     <div class="reviews" id="reviews">
         <div class="container">
-            <h1 class="text-center">Reviews</h1>
+            <h1 class="text-center">See What Our Customers Have To Say...</h1>
             <div class="row">
                 <div class="col-md-4 col-lg-4 col-sm-12">
                     <div class="card">
-                        <div class="card-img">
-                            <img src="images/posts/polit.jpg" class="img-fluid">
-                        </div>
+
 
                         <div class="card-body">
-                            <h4 class="card-title">Post Title</h4>
+                            <h4 class="card-title">Stick with AirThere! They are <em>ALWAYS</em> there!!!</h4>
+                            <p class="card-text">
+
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="" class="card-link">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-12">
+                    <div class="card">
+
+
+                        <div class="card-body">
+                            <h4 class="card-title">You are getting a true <em>professional</em> who knows
+                                what he's doing...</h4>
                             <p class="card-text">
 
                                 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -101,12 +125,46 @@
                 </div>
                 <div class="col-md-4 col-lg-4 col-sm-12">
                     <div class="card">
-                        <div class="card-img">
-                            <img src="images/posts/images.jpg" class="img-fluid">
-                        </div>
+
 
                         <div class="card-body">
-                            <h4 class="card-title">Post Title</h4>
+                            <h4 class="card-title">As long as Bob is available, we'll never call anyone else!</h4>
+                            <p class="card-text">
+
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <p>Noreen S.,<br>
+                                Casselberry, FL</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-lg-4 col-sm-12">
+                    <div class="card">
+
+
+                        <div class="card-body">
+                            <h4 class="card-title">Stick with AirThere! They are <em>ALWAYS</em> there!!!</h4>
+                            <p class="card-text">
+
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="" class="card-link">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-sm-12">
+                    <div class="card">
+
+
+                        <div class="card-body">
+                            <h4 class="card-title">You are getting a true <em>professional</em> who knows
+                                what he's doing...</h4>
                             <p class="card-text">
 
                                 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -119,19 +177,17 @@
                 </div>
                 <div class="col-md-4 col-lg-4 col-sm-12">
                     <div class="card">
-                        <div class="card-img">
-                            <img src="images/posts/imag2.jpg" class="img-fluid">
-                        </div>
+
 
                         <div class="card-body">
-                            <h4 class="card-title">Post Title</h4>
+                            <h4 class="card-title">As long as Bob is available, we'll never call anyone else!</h4>
                             <p class="card-text">
 
-                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                             </p>
                         </div>
                         <div class="card-footer">
-                            <a href="" class="card-link">Read more</a>
+                            <p>Noreen S.,<br>
+                                Casselberry, FL</P>
                         </div>
                     </div>
                 </div>
@@ -149,29 +205,43 @@
                     </div>
                     <div class="col-lg-8 col-md-8 col-sm-12 right">
                         <div class="form-group">
-                            <input type="text" class="form-control form-control-lg" placeholder="Your Name" name="">
+                           
+                            
+                                <input type="text" class="form-control form-control-lg" id="firstName" name="firstName"
+                                    placeholder="First Name" />
+                                
                         </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control form-control-lg" placeholder="YourEmail@email.com"
-                                name="email">
+                                <div class="form-group">
+                            
+                                <input type="text" class="form-control form-control-lg" id="lastName" name="lastName"
+                                placeholder="Last Name"/>
+                            
+                                
                         </div>
-                        <div class="form-group">
-                            <textarea class="form-control form-control-lg">
-            </textarea>
+                        
+                            <div class="form-group">
+                                <input type="tel" class="form-control form-control-lg" placeholder="Phone Number"
+                                name="phone" />
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control form-control-lg"
+                                placeholder="YourEmail@email.com" name="email">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control form-control-lg"></textarea>
+                            </div>
+                            <input type="submit" class="btn btn-secondary btn-block" value="Send" name="submit">
                         </div>
-                        <input type="submit" class="btn btn-secondary btn-block" value="Send" name="">
-                    </div>
-                </div>
-            </form>
+                    </form>
         </div>
     </div>
 
-    <!-- build:js js/main.js -->
+    <!-- scripts -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
-    <!-- endbuild -->
+    <!-- endscipts -->
 
 
 </body>
