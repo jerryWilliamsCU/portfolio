@@ -5,40 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
     <!--css/main.css -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway|Open+Sans"/>
-    <link rel="stylesheet" href="css/styles.css"/>
-
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik|Open+Sans" />
+    <link rel="stylesheet" href="css/styles.css" />
     <!-- end css-->
-
-
     <title>AirThere</title>
 </head>
 
 <body id="nav">
-
-
     <!-- navbar -->
-    <nav class="navbar fixed-top navbar-light navbar-expand-lg navbar-template">
-        <a class="navbar-brand" href="#">AirThere</a>
+    <nav class="navbar sticky-top navbar-light navbar-expand-lg navbar-template">
+        <a class="navbar-brand" href="#">Home</a>
         <div class="d-flex flex-row order-2 order-lg-3">
             <ul class="navbar-nav flex-row">
-                <li class="nav-item"><a class="nav-link px-2" href="http://linkedin.com/" role="button"><span class="fa fa-linkedin"></span></a></li>
-                <li class="nav-item"><a class="nav-link px-2" href="http://facebook.com" role="button"><span class="fa fa-facebook"></span></a></li>
-                <li class="nav-item"><a class="nav-link px-2" href="http://twitter.com" role="button"><span class="fa fa-twitter"></span></a></li>
-                <li class="nav-item"><a class="nav-link px-2" href="http://youtube.com" role="button"><span class="fa fa-youtube"></span></a></li>
+                <span class="navbar-item navbar-text mr-4"><i class="fa fa-phone"></i>407-625-2122</span>
+                <li class="nav-item"><a class="nav-link px-2" href="http://linkedin.com/" role="button"><span
+                            class="fa fa-linkedin"></span></a></li>
+                <li class="nav-item"><a class="nav-link px-2" href="http://facebook.com" role="button"><span
+                            class="fa fa-facebook"></span></a></li>
+                <li class="nav-item"><a class="nav-link px-2" href="http://twitter.com" role="button"><span
+                            class="fa fa-twitter"></span></a></li>
+
             </ul>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="#navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="#navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
         </div>
         <div class="collapse navbar-collapse order-3 order-lg-2" id="navbarNavDropdown">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
                 <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
@@ -47,43 +45,33 @@
         </div>
     </nav>
     <!-- header -->
-    <header class="header ">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="description ">
-                <h1>
-                    Hello, Welcome To AirThere.com!
-                    <p>
-                        When it comes to air conditioning, there's no substitute for experience, and we have over 20
-                        years experience servicing and installing air conditioning systems for homeowners in the greater
-                        Orlando area.</p>
-
-                    <p> We're fully licensed and insured, and service all makes and models. Call us at AirThere.com for
-                        all your air conditioning and heating needs.</p>
-                        <p>License#CAC1814107</p>
-                    <a href="#contact" class="btn btn-secondary btn-lg" role="button" aria-pressed="true">Request
-                        Service</a>
-                    <a href="tel:+14076252122" role="button" class="btn btn-secondary btn-lg" href="tel:+14076252122"><i
-                            class="fa fa-phone"></i>
-                        407-625-2122</a>
-
-                </h1>
+    <header class="header">
+        <div class="overlay">
+            <div class="container">
+                <div class="description">
+                    <h1>
+                        Hello, Welcome To AirThere.com!
+                        <p>
+                            When it comes to air conditioning, there's no substitute for experience, and we have over 20
+                            years of experience servicing and installing air conditioning systems for homeowners in the
+                            greater Orlando area. We're fully licensed and insured, and service all makes and models.
+                            Call us
+                            for all of your heating and cooling needs.</p>
+                        <p>License# CAC1814107</p>
+                        <a href="#contact" class="btn btn-secondary btn-lg" role="button" aria-pressed="true">Request
+                            Service</a>
+                    </h1>
+                </div>
             </div>
         </div>
-
     </header>
-
     <!-- About section -->
     <div class="about" id="about">
         <div class="container">
             <h1 class="text-center">About</h1>
             <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <img src="/img/bob.jpg" class="img-fluid">
-
-                </div>
-                <div class="col-lg-8 col-md-8 col-sm-12 desc">
-
+                <img src="/img/bob.jpg" class="img-fluid col-lg-4 col-md-4 col-sm-12">
+                <div class="container-fluid col-lg-8 col-md-8 col-sm-12 desc" id="desc">
                     <h3>Bob Lomax</h3>
                     <p>
                         I have lived and worked in Central Florida since 1981. I've seen many changes in the air
@@ -94,196 +82,187 @@
                         founded. AirThere.com offers personal low cost service and installations, where everything from
                         design and permits to sweeping up afterwards is done by the contractor. By working directly with
                         the homeowner we are able to cut overhead and still provide high quality workmanship by a master
-                        technician.</p>
+                        technician. </p>
                     <p>Contracting the way it used to be, where completion means it "looks good, works good, and lasts a
-                        long time" -- a job done right the first time.
-
-
-                    </p>
+                        long time." &mdash; a job done right the first time.</p>
                 </div>
             </div>
         </div>
     </div>
 
-
- 
-
-
-
-    <div class="container" id="reviews">
-        <h1 class="text-center">See What Our Customers Have To Say...</h1>
-        <div class="card-deck d-flex">
-            <div class="card mb-4">
-                <div class="card-block">
-                    <h5 class="card-title">As long as Bob is available, we'll never call anyone else!</h5>
-                    
-                    <p class="card-text">We had heard good things about AirThere.com from friends, so we
-                        called Bob Lomax. He
-                        quickly came to our rescue, and the whole experience couldn't have been better. Bob
-                        didn't try to sell us a new system nor issue dire warnings that required expensive but
-                        unnecessary repairs. He had us cooled down within a couple of hours after our call. His
-                        explanations made sense and we learned a lot about our system.</p>
-                    </div>
-                    <div class="mt-auto ml-3"><medium class="text-muted align">Noreen S. -  Casselberry, FL</medium></div>
-            </div>
-            
-            
-            <span></span>
-            <div class="card mb-4">
-                <div class="card-block">
-                    <h5 class="card-title">You are getting a true <em>professional</em> who knows
-                        what he's doing...</h5>
-                    <p class="card-text">Prior to meeting Bob, my husband and I had two separate air conditioning
-                        problems that nobody was able to fix. Along came Bob Lomax. In about an hour's time, he
-                        had both problems
-                        diagnosed and came back when he said he with the parts, as well as fixed both problems
-                        for the price he
-                        said it would cost. Bob is more than fair in his
-                        pricing and his customer service. Yes, there still are some genuine people
-                        out there</p>
+    <!-- Services section -->
+    <div class="container" id="services">
+        <div class="services">
+            <h1>Our Services</h1>
+            <h2><em>Free Estimates - Free Second Opinions</em></h2>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-12 col-lg-6 text-center">
+                <div class="icon">
+                    <i class="fa fa-wrench" aria-hidden="true"></i>
                 </div>
-                <div class="mt-auto ml-3"><medium class="text-muted align">Ann and Angelo Cane -
-                    Orlando, FL</medium></div>
+                <h3>Service</h3>
+                <p>We service all makes and models, and offer emergency 24-hour service (overtime charges may apply) to
+                    the greater Orlando area. We arrive at your home with a wide array of parts on the truck, so chances
+                    are your repair can be done quickly and efficiently.</p>
             </div>
-            <span></span>
-
-            <span></span>
-            <div class="card mb-4">
-
-                <div class="card-block">
-                    <h5 class="card-title">Stick with AirThere.com! They are <em>ALWAYS</em> there!!!</h5>
-                    <p class="card-text">My husband and I had just returned from vacation to a broken A/C; and as
-                        everyone knows,
-                        you can’t live in Florida without your A/C. Our old A/C company finally came after 2
-                        days. They took one
-                        look at the unit for 30 seconds, and said we needed a new one without even touch the
-                        equipment! We balked at this
-                        since it unit was less than 6 years old. Bob was on vacation, but diagnosed the problem
-                        over the phone.
-                        He went out of his way to call a technician for us. The man showed up soon after and
-                        repaired our A/C with a $30 part!</p>
-                    
+            <div class="col-md-12 col-lg-6 text-center">
+                <div class="icon">
+                    <i class="fa fa-cog" aria-hidden="true"></i>
                 </div>
-                <div class="mt-auto ml-3"><medium class="text-muted align">K. & G. Mitchell -
-
-                    Winter Park, FL</medium></div>
-            </div>
-            <span></span>
-            <span></span>
-            <div class="card mb-4">
-
-                <div class="card-block">
-                    <h5 class="card-title">I will recommend you to everyone I know.</h5>
-                    <p class="card-text">Thank you for the service and knowledge you provided me. I know for a fact that
-                        other
-                        companies do not have my best interests in mind when it comes to AC sales and service
-                        and your company is not like the others. You took the time to educate me and gave me the
-                        system I needed. Your pricing was fair and the work was done to my satisfaction the very
-                        next week.</p>
-                    
-                </div>
-                <div class="mt-auto ml-3"><medium class="text-muted align">Joline -
-                    Apopka, FL</medium></div>
-            </div>
-            <span></span>
-            <span></span>
-            <div class="card mb-4">
-
-                <div class="card-block">
-                    <h5 class="card-title">It's a no-brainer...</h5>
-                    <p class="card-text">I have been a customer of AirThere for almost fifteen years. Bob has performed
-                        multiple
-                        services on my A/C. Everything from yearly check-ups to parts replacement to sales and
-                        installation of a new system. Bob has always been patient and honest when explaining what needs
-                        to be done and why it needs to be done. A well running A/C system is critical for living in
-                        Florida. I would not trust the maintenance and care of this vital piece of equipment to
-                        anyone else.</p>
-                </div>
-                <div class="mt-auto ml-3"><medium class="text-muted align">Jerry W. - Lake Mary, FL</medium></div>
-            </div>
-            <span></span>
-            <span></span>
-            <div class="card mb-4">
-
-                <div class="card-block">
-                    <h5 class="card-title">We will be happy to recommend you to all our friends.</h5>
-                    <p class="card-text">It is a scary thing when a major component of your home needs work and you
-                        don’t know
-                        anyone in the business. Especially when we realized our AC unit
-                        have to be replaced. Fortunately, we had friends who happily
-                        recommended Bob to us. With Bob, we felt at ease and were
-                        delighted when his quote was substantially less than the others we received.
-                        Not only did Bob fix us up with a great new system at a great
-                        price, he was personable and trustworthy.</p>
-                   
-                </div>
-                <div class="mt-auto ml-3"><medium class="text-muted align">Tom and Cathy  T. - Sanford, FL</medium></div>
+                <h3>Installation</h3>
+                <p>Fully licensed and insured -- we specialize in custom, high quality, change outs and duct work. All
+                    work is custom tailored to, not just the home but the homeowner, and with an eye for detail in
+                    everything from design and efficiency to cost.</p>
             </div>
         </div>
 
-    </div>
-
-    <!-- Contact form -->
-    <div class="contact-form" id="contact">
-        <div class="container">
-            <form>
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                        <h1>Contact AirThere</h1>
+        <!-- Reviews section -->
+        <div class="container" id="reviews">
+            <h1 class="text-center">See What Our Customers Have To Say...</h1>
+            <div class="card-deck d-flex">
+                <div class="card mb-4">
+                    <div class="card-block">
+                        <h5 class="card-title">As long as Bob is available, we'll never call anyone else!</h5>
+                        <p class="card-text">We had heard good things about AirThere.com from friends, so we
+                            called Bob Lomax. He quickly came to our rescue, and the whole experience couldn't have been
+                            better. Bob didn't try to sell us a new system nor issue dire warnings that required expensive but
+                            unnecessary repairs. He had us cooled down within a couple of hours after our call. His
+                            explanations made sense and we learned a lot about our system.</p>
                     </div>
-                    <div class="col-lg-8 col-md-8 col-sm-12 right">
-                        <div class="form-group">
-                            <input type="text" class="form-control form-control-lg" placeholder="First Name" name="">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control form-control-lg" placeholder="Last Name" name="">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control form-control-lg" placeholder="Phone Number" name="">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control form-control-lg" placeholder="YourEmail@email.com"
-                                name="email">
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control form-control-lg">
-
-                      </textarea>
-                        </div>
-                        <input type="submit" class="btn btn-secondary btn-block" value="Send" name="">
+                    <div class="mt-auto ml-3">
+                        <medium class="text-muted align">Noreen S. - Casselberry, FL</medium>
                     </div>
                 </div>
+                <span></span>
+                <div class="card mb-4">
+                    <div class="card-block">
+                        <h5 class="card-title">You are getting a true <em>professional</em> who knows
+                            what he's doing...</h5>
+                        <p class="card-text">Prior to meeting Bob, my husband and I had two separate air conditioning
+                            problems that nobody was able to fix. Along came Bob Lomax. In about an hour's time, he
+                            had both problems diagnosed and came back when he said he with the parts, as well as fixed
+                            both problems for the price he said it would cost. Bob is more than fair in his
+                            pricing and his customer service. Yes, there still are some genuine people out there</p>
+                    </div>
+                    <div class="mt-auto ml-3">
+                        <medium class="text-muted align">Ann and Angelo Cane - Orlando, FL</medium>
+                    </div>
+                </div>
+                <span></span>
+                <span></span>
+                <div class="card mb-4">
+                    <div class="card-block">
+                        <h5 class="card-title">Stick with AirThere! They are <em>ALWAYS</em> there!!!</h5>
+                        <p class="card-text">My husband and I had just returned from vacation to a broken A/C; and as
+                            everyone knows, you can’t live in Florida without your A/C. Our old A/C company finally came after 2
+                            days. They took one look at the unit for 30 seconds, and said we needed a new one without even touch the
+                            equipment! We balked at this since it unit was less than 6 years old. Bob was on vacation, but diagnosed the problem
+                            over the phone. He went out of his way to call a technician for us. The man showed up soon after and
+                            repaired our A/C with a $30 part!</p>
+                    </div>
+                    <div class="mt-auto ml-3">
+                        <medium class="text-muted align">K. & G. Mitchell - Winter Park, FL</medium>
+                    </div>
+                </div>
+                <span></span>
+                <span></span>
+                <div class="card mb-4">
+                    <div class="card-block">
+                        <h5 class="card-title">I will recommend you to everyone I know.</h5>
+                        <p class="card-text">Thank you for the service and knowledge you provided me. I know for a fact
+                            that other companies do not have my best interests in mind when it comes to AC sales and service
+                            and your company is not like the others. You took the time to educate me and gave me the
+                            system I needed. Your pricing was fair and the work was done to my satisfaction the very
+                            next week.</p>
+                    </div>
+                    <div class="mt-auto ml-3">
+                        <medium class="text-muted align">Joline - Apopka, FL</medium>
+                    </div>
+                </div>
+                <span></span>
+                <span></span>
+                <div class="card mb-4">
+
+                    <div class="card-block">
+                        <h5 class="card-title">It's a no-brainer...</h5>
+                        <p class="card-text">I have been a customer of AirThere for almost fifteen years. Bob has
+                            performed multiple services on my A/C. Everything from yearly check-ups to parts replacement
+                            to sales and installation of a new system. Bob has always been patient and honest when explaining what
+                            needs to be done and why it needs to be done. A well running A/C system is critical for
+                            living in Florida. I would not trust the maintenance and care of this vital piece of equipment to
+                            anyone else.</p>
+                    </div>
+                    <div class="mt-auto ml-3">
+                        <medium class="text-muted align">Jerry W. - Lake Mary, FL</medium>
+                    </div>
+                </div>
+                <span></span>
+                <span></span>
+                <div class="card mb-4">
+                    <div class="card-block">
+                        <h5 class="card-title">We will be happy to recommend you to all our friends.</h5>
+                        <p class="card-text">It is a scary thing when a major component of your home needs work and you
+                            don’t know anyone in the business. Especially when we realized our AC unit have to be replaced. 
+                            Fortunately, we had friends who happily recommended Bob to us. With Bob, we felt at ease and were
+                            delighted when his quote was substantially less than the others we received.
+                            Not only did Bob fix us up with a great new system at a great
+                            price, he was personable and trustworthy.</p>
+                    </div>
+                    <div class="mt-auto ml-3">
+                        <medium class="text-muted align">Tom and Cathy T. - Sanford, FL</medium>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    
+
+        <!-- Contact form -->
+        <div class="contact-form" id="contact">
+            <div class="container">
+                <form>
+                    <div class="row">
+                        <div class="col-xl-9 col-lg-9 col-md-9 col-sm-10 mx-auto text-center">
+                            <h1>Contact Us</h1>
+                            <div class="form-group">
+                                <input type="text" class="form-control form-control-lg" placeholder="First Name"
+                                    name="">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control form-control-lg" placeholder="Last Name" name="">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control form-control-lg" placeholder="Phone Number"
+                                    name="">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control form-control-lg"
+                                    placeholder="YourEmail@email.com" name="email">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control form-control-lg">
+                                </textarea>
+                            </div>
+                            <input type="submit" class="btn btn-secondary btn-block" value="Send" name="">
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="page-footer">
+            <div class="container-fluid mb-3 text-center">
+                <a href="tel:+14076252122" role="button" class="btn btn-secondary btn-lg">
+                    <i class="fa fa-phone"></i>407-625-2122</a>
+            </div>
+        </footer>
 
 
-   
-    <!-- Footer -->
-    <footer class="page-footer">
-    
-      <!-- Footer Elements -->
-      <div class="container mb-2 text-center">
-    
-                <a href="tel:+14076252122" role="button" class="btn btn-secondary btn-lg" href="tel:+14076252122"><i
-                    class="fa fa-phone"></i>
-                407-625-2122</a>
-         
-        <!-- Social buttons -->
-    
-      </div>
-      <!-- Footer Elements -->
-    
-    </footer>
-    <!-- Footer -->
-
-    <!-- scripts -->
-   
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
-    <!-- end scripts -->
+        <!-- scripts -->
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <!-- end scripts -->
 
 </body>
 

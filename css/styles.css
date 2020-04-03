@@ -5,7 +5,7 @@ html {
 }
 
 html,h1,h2,h3,h4,h5,h6,a{
-    font-family: "Raleway";
+    font-family: "Rubik";
 }
 
 body{
@@ -14,10 +14,15 @@ body{
     background:#f4f4f4;
 }
 
+.btn {
+    border: 1px solid #F97300;
+    background: #F97300;
+    color: #fff;
+}
+
 /* navbar style*/
 .navbar-brand{
-  color: #f4f4f4 !important;
-    
+  color: #f4f4f4 !important; 
 }
 
 .navbar{
@@ -28,27 +33,39 @@ body{
     margin-right: 1em !important;
     cursor: pointer;
 }
+
 .nav-link:hover, .navbar-brand:hover{
 	background: #f4f4f4;
 	color: #f97300 !important;
+}
 
+.navbar-text{
+
+color: #f4f4f4 !important;
+font-size: 17px;
+font-family: "Rubik";
 }
 .navbar-collapse{
  justify-content: flex-end;
- 
 }
+
 .navbar-toggler{
   background:#fff !important;
+  background-size: 10px;
 }
 .navbar-light .navbar-nav .nav-link{
-    color: #f4f4f4;
+    color: #f4f4f4   
 }
+
+.fa-linkedin, .fa-twitter, .fa-facebook{
+    font-size: 20px;  
+}
+
 
 /* header style*/
 .header{
 	position: relative;
 	background-image: url("/img/ac.jpg");
-
 	background-size: cover;
 	background-position: center;
 }
@@ -65,8 +82,8 @@ body{
     top: 30%;
     margin: auto;
     padding: 2em;
-
 }
+
 .description h1{
 	color:#F97300 ;
 }
@@ -74,19 +91,16 @@ body{
 	color:#666;
 	font-size: 20px;
 	width: 50%;
-	line-height: 1.5;
-}
-.btn {
-    border: 1px solid #F97300;
-    background: #F97300;
-    color: #fff;
+    line-height: 1.5; 
 }
 
 /* about style*/
+
 .about{
-	margin: 4em 0;
-	padding: 1em;
-	position: relative;
+	margin: 10em 0;
+	
+    position: relative;
+    font-size: 15px;
 }
 .about h1{
 	color:#F97300;
@@ -94,46 +108,63 @@ body{
 }
 .about img{
 	height: 100%;
-    width: 100%;
-    border-radius: 10%
+    width: 100;
+    border-radius: 10%;
+    
 }
 .about span{
 	display: block;
-	color: #888;
+	color: #666;
 	position: absolute;
 	left: 115px;
 }
 .about .desc{
 	padding: 2em;
-	border-left:4px solid #10828C;
+   
 }
 .about .desc h3{
 	color: #10828C;
 }
 .about .desc p{
 	line-height:2;
-	color:#888;
+    color:#666;
+    text-align: justify; 
+}
+
+/* sevices style*/
+#services{
+position: relative;
+margin-top: 10em;
+}
+.services{
+    margin: 50px, auto;
+    text-align: center;
+    color: #F97300;
+}
+#services p{
+    font-size: 17px;
+    text-align: justify;
+}
+.services h2{
+color: #666
+}
+.icon{
+    font-size: 6em;
+    color: #F97300;
 }
 
 /*reviews style*/
-/* responsively enforce wrapping */
-.card-deck span {
-    display: none;
-}
-
 @media (min-width:1200px){
   .card-deck span:nth-of-type(5n) {
     display: block;
     width: 100%;
-  }
-  
+  } 
 }
 @media (min-width:992px) and (max-width: 1199px) {
  .card-deck span:nth-of-type(4n) {
     display: block;
     width: 100%;
   }
-  
 }
 @media (min-width:768px) and (max-width: 991px) {
   .card-deck span:nth-of-type(3n) {
@@ -147,15 +178,13 @@ body{
     width: 100%;
   }
 }
-
 #reviews h1{
     margin: 2em;
+    margin-top: 5em;
     color: #F97300;
-
 }
 #reviews .card {
     position: relative;
-   
     background-color: #fff;
     border-radius: 5px;
     border-radius: 5px;
@@ -163,46 +192,38 @@ body{
     -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-
 #reviews .card:hover {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
     transform: scale(1.05, 1.05);
 }
-
-
 #reviews .card:hover::after {
-
     opacity: 1;
 }
-
 #reviews .card-title {
     color: #F97300;
     padding-left: 1em;
     padding-right: 1em;
     padding-top: 5px;
 }
-
 #reviews .card-text {
-    
     margin-left: 1em;
     padding-right: 1em;
     padding-bottom: 1em;
-
+    font-size: 15px;
 }
-
 
 /* contact form style*/
 .contact-form{
-	margin: 6em 0;
+	margin: 8em 0;
 	position: relative;		
 }
-
 .contact-form h1{
-	padding:2em 1px;
+	padding:1em 1px;
 	color: #F97300; 
 }
 .contact-form .right{
-	max-width: 600px;
+    max-width: 600px;
+    
 }
 .contact-form .right .btn-secondary{
 	background:  #F97300;
@@ -210,7 +231,7 @@ body{
 	border:0;
 }
 .contact-form .right .form-control::placeholder{
-	color: #888;
+	color: #999;
 	font-size: 16px;
 }
 
