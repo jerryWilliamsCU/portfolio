@@ -18,49 +18,64 @@ body{
     border: 1px solid #F97300;
     background: #F97300;
     color: #fff;
+    padding-top: 10px;
 }
 
 /* navbar style*/
 .navbar-brand{
-  color: #f4f4f4 !important; 
+    color: #f4f4f4 !important; 
+  }
+  
+  .navbar{
+      background:#F97300;
+  }
+  
+  .nav-link{
+      margin-right: 1em !important;
+      cursor: pointer;
+  }
+  
+  .nav-link:hover, .navbar-brand:hover{
+      background: #f4f4f4;
+      color: #f97300 !important;
+  }
+  
+  .navbar-text{
+  color: #f4f4f4 !important;
+  font-size: 17px;
+  font-family: "Rubik";
+  }
+  .navbar-collapse{
+   text-align: center;
+   padding-top: 10px;
+  
+  }
+  
+  .navbar-toggler{
+    background:#fff !important;
+    text-align: center !important;
+  }
+  .navbar-light .navbar-nav .nav-link{
+      color: #f4f4f4   
+  }
+  
+  .fa-linkedin, .fa-twitter, .fa-facebook{
+      font-size: 15px;  
+  }
+  #phone-btn {
+    border: 1px solid #fff;
+    border-radius: 5%;
+    background: #F97300;
+    color: #fff !important;
+    font-size: 15px;
+    padding-left: 3px;
+    padding-right: 3px; 
 }
 
-.navbar{
-	background:#F97300;
-}
+#phone-btn:hover{
+    background-color: #6c757d;
 
-.nav-link{
-    margin-right: 1em !important;
-    cursor: pointer;
 }
-
-.nav-link:hover, .navbar-brand:hover{
-	background: #f4f4f4;
-	color: #f97300 !important;
-}
-
-.navbar-text{
-
-color: #f4f4f4 !important;
-font-size: 17px;
-font-family: "Rubik";
-}
-.navbar-collapse{
- justify-content: flex-end;
-}
-
-.navbar-toggler{
-  background:#fff !important;
-  background-size: 10px;
-}
-.navbar-light .navbar-nav .nav-link{
-    color: #f4f4f4   
-}
-
-.fa-linkedin, .fa-twitter, .fa-facebook{
-    font-size: 20px;  
-}
-
 
 /* header style*/
 .header{
@@ -89,16 +104,16 @@ font-family: "Rubik";
 }
 .description p{
 	color:#666;
-	font-size: 20px;
+	font-size: 18px;
 	width: 50%;
     line-height: 1.5; 
+    text-align: left;
 }
 
 /* about style*/
 
 .about{
-	margin: 10em 0;
-	
+	margin: 8em 0;
     position: relative;
     font-size: 15px;
 }
@@ -106,7 +121,16 @@ font-family: "Rubik";
 	color:#F97300;
 	margin: 2em;
 }
-.about img{
+@media only screen and (max-width:1200px){
+
+     .img-fluid{
+        display: none;
+    }
+    
+
+}
+
+.img-fluid{
 	height: 100%;
     width: 100;
     border-radius: 10%;
@@ -146,8 +170,12 @@ margin-top: 10em;
     text-align: justify;
 }
 .services h2{
-color: #666
+color: #666;
+padding-top: 20px;
+
 }
+
+
 .icon{
     font-size: 6em;
     color: #F97300;
