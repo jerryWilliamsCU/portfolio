@@ -18,55 +18,39 @@
 <body>
 
     <!-- navbar -->
-    <nav class="navbar sticky-top navbar-light navbar-expand-lg navbar-template">
-        <a class="navbar-brand" href="#">Home</a>
-        <div class="d-flex flex-row order-2 order-md-3 mt-1">
-            <ul class="navbar-nav flex-row">
-                <a href="tel:+14076252122" role="button" class="nav-link mr-5" id="phone-btn">
-                    <i class="fa fa-phone"></i>407-625-2122</a>
-                <li class="nav-item"><a class="nav-link px-2" href="http://linkedin.com/" role="button"><span
-                            class="fa fa-linkedin"></span></a></li>
-                <li class="nav-item"><a class="nav-link px-2" href="http://facebook.com" role="button"><span
-                            class="fa fa-facebook"></span></a></li>
-                <li class="nav-item"><a class="nav-link px-2" href="http://twitter.com" role="button"><span
-                            class="fa fa-twitter"></span></a></li>
-            </ul>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                aria-controls="#navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
-        <div class="collapse navbar-collapse order-3 order-lg-2" id="navbarNavDropdown">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>           
-            </ul>
-        </div>
+<header class="header" id="header">
+    <a href="#" class="nav-link" id="logo">AirThere</a>
+    <div class="menu-toggle"></div>
+    <nav>        
+        <ul>
+            <li><a href="#" class="nav-link" role="button">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#services" class="nav-link">Services</a></li>
+            <li><a href="#reviews" class="nav-link">Reviews</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
     </nav>
 
-    <!-- header -->
-    <header class="header">
-        <div class="overlay">
-            <div class="container">
-                <div class="description">
-                    <h1>
-                        Hello, Welcome To AirThere.com!
-                        <p>
-                            When it comes to air conditioning, there's no substitute for experience, and we have over 20
-                            years of experience servicing and installing air conditioning systems for homeowners in the
-                            greater Orlando area.</p><p> We're fully licensed and insured, and service all makes and models.
-                            Call us for all of your heating and cooling needs.</p>
-                        <p>License# CAC1814107</p>
-                        <a href="#contact" class="btn btn-secondary btn-lg" role="button" aria-pressed="true" id="request-btn">Request
-                            Service</a>
-                    </h1>
-                </div>
-            </div>
-        </div>
-    </header>
+    <div class="clearfix"></div>
+</header>
 
+
+<div class="hero-image">
+    <div class="hero-text">
+        <div class="container col-lg-7">
+        <h1> Hello, Welcome To AirThere.com!</h1>
+            <p>
+                When it comes to air conditioning, there's no substitute for experience, and we have over 20
+                years of experience servicing and installing air conditioning systems for homeowners in the
+                greater Orlando area.</p><p> We're fully licensed and insured, and service all makes and models.
+                Call us for all of your heating and cooling needs.</p>
+            <p>License# CAC1814107</p>
+            <a href="tel:+14076252122" role="button" class="btn btn-secondary btn-lg" id="phone-top">
+                <i class="fa fa-phone"></i>407-625-2122</a>
+            </div>
+    </div>
+</div>
+    
     <!-- About section -->
     <div class="about" id="about">
         <div class="container">
@@ -121,7 +105,7 @@
 
         <!-- Reviews section -->
         <div class="container" id="reviews">
-            <h1 class="text-center">See What Our Customers Have To Say...</h1>
+            <h1 class="reviews-text text-center">See What Our Customers Have To Say...</h1>
             <div class="card-deck d-flex">
                 <div class="card mb-4">
                     <div class="card-block">
@@ -244,7 +228,7 @@
                                 <textarea class="form-control form-control-lg">
                                 </textarea>
                             </div>
-                            <input type="submit" class="btn btn-secondary btn-block" value="Send" name="">
+                            <input type="submit" class="btn btn-secondary btn-block" value="Send" name="Send">
                         </div>
                     </div>
                 </div>   
@@ -255,6 +239,12 @@
             <div class="container-fluid mb-4 text-center">
                 <a href="tel:+14076252122" role="button" class="btn btn-secondary btn-lg">
                     <i class="fa fa-phone"></i>407-625-2122</a>
+                    <div class="social-media">
+                    <div class="container-fluid mb-4 text-center mt-5">
+                        <a href="https://linkedin.com"><i class="fa fa-linkedin fa-2x social btn-secondary"></i></a>
+                        <a href="https://www.facebook.com"><i class="fa fa-facebook fa-2x social btn-secondary"></i></a>              
+                        <a href="https://youtube.com"><i class="fa fa-youtube fa-2x social btn-secondary"></i></a>
+                    </div>
             </div>
         </footer>
 

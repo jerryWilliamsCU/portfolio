@@ -33,7 +33,8 @@
     "bootstrap-social": "^5.1.1",
     "font-awesome": "^4.7.0",
     "jquery": "^3.3.1",
-    "popper.js": "^1.12.9"
+    "popper.js": "^1.12.9",
+    "three": "^0.115.0"
   },
   "repository": {
     "type": "git",
