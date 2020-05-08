@@ -1,0 +1,1024 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+$base-color: #00b3ff;
+$sec-color: #FF4C00;
+$tertiary-color: black;
+$primary-font: "Vibur", cursive;
+$secondary-font: "Oswald";
+$shadow-primary: 0 -40px 100px, 0 0 2px, 0 0 1em $base-color, 0 0 0.5em $base-color, 0 0 0.1em $base-color;
+$shadow-secondary: 0 -40px 100px, 0 0 2px, 0 0 1em $sec-color, 0 0 0.5em $sec-color, 0 0 0.1em $sec-color;
+
+html{
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.cf::before,
+.cf::after {
+    content: "";
+    display: table; 
+}
+.sec-services h2,
+.sec-services p {
+  font-weight: 300;
+  text-align: center;
+}
+.cf::after {
+    clear: both;
+}
+
+html {
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ========================
+Global
+======================== */
+
+body {
+  background-color: $tertiary-color;
+  font-family: $secondary-font;
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+.col-sm-4{ 
+  text-align: center;
+  hr{
+    border: 1px solid $sec-color;
+    box-shadow: $shadow-secondary;
+    width: 65%;
+  }
+}
+
+
+
+#tech .h3{
+  animation: flicker linear infinite 2.5s;
+  animation-fill-mode: both;
+  color: $sec-color;
+  text-shadow: $shadow-secondary;    
+ 
+}
+
+#degree{
+  border: 1px solid $sec-color;
+  box-shadow: $shadow-secondary;
+  border-radius: 5px;
+  width: 50%;
+}
+h1, h2, h3, h4, h5, h6, ul, ol, p {
+  margin-top: 0;
+  color: $base-color;
+}
+
+h1, h2, h3 {
+  font-weight: 400;
+  color: $sec-color;
+  font-family: $primary-font;
+  text-shadow: $shadow-secondary;
+}
+.h3{
+  font-family: $primary-font;
+  color: $sec-color;
+
+}
+p {
+  line-height: 1.5;
+}
+
+a, a:hover, a:focus, a:active, a:visited {
+  color: $sec-color;
+  text-decoration: none;
+}
+
+/* ========================
+Containers
+======================== */
+
+.container-fluid {
+  padding: 0 1em;
+  
+}
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.header-area {
+  background: $tertiary-color;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+}
+/* default css end */
+
+
+/* navbar regular css start */
+.navbar-area {
+  background: $tertiary-color;
+  
+  z-index: 10;
+  position: fixed;
+    width: 100%;
+    top: 0;
+}
+.site-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+a.site-logo {
+  font-family: $primary-font;
+  text-shadow: $shadow-primary;
+  font-size: 36px;
+  font-weight: 500;
+  color: $base-color;
+  text-decoration: none;
+  span{
+    color: $sec-color;
+    text-shadow: $shadow-secondary;
+    
+  }
+}
+.site-navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+.site-navbar ul li a {
+  font-family: $primary-font;
+  color: $base-color;
+  text-shadow: $shadow-primary;
+  padding: 20px;
+  display: block;
+  text-decoration: none;
+  &:hover{
+    color: $sec-color;
+    text-shadow: $shadow-secondary;
+    transition: ease .5s;
+  }
+  
+}
+
+/* navbar regular css end */
+
+
+/* nav-toggler css start */
+.nav-toggler {
+  border: 3px solid $base-color;
+  box-shadow: $shadow-primary;
+  padding: 5px;
+  background-color: transparent;
+  cursor: pointer;
+  height: 39px;
+  display: none;
+}
+.nav-toggler span, 
+.nav-toggler span:before, 
+.nav-toggler span:after {
+  width: 28px;
+  height: 3px;
+  background-color: $base-color;
+  box-shadow: $tertiary-color;
+  display: block;
+  transition: .3s;
+}
+.nav-toggler span:before {
+  content: '';
+  transform: translateY(-9px);
+}
+.nav-toggler span:after {
+  content: '';
+  transform: translateY(6px);
+ 
+}
+.nav-toggler.toggler-open span {
+  background-color: transparent;
+}
+.nav-toggler.toggler-open span:before {
+  transform: translateY(0px) rotate(45deg);
+  background-color: $sec-color;
+  box-shadow: $shadow-secondary;
+}
+.nav-toggler.toggler-open span:after {
+  transform: translateY(-3px) rotate(-45deg);
+  background-color: $sec-color;
+  box-shadow: $shadow-secondary;
+}
+/* nav-toggler css start */
+
+
+/* intro-area css start */
+.intro-area {
+  height: calc(100vh - 61px);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  
+}
+
+/* intro-area css end */
+
+
+/* mobile breakpoint start */
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 720px;
+  }
+  /* navbar css for mobile start */
+  .nav-toggler{
+    display: block;
+  }
+  .site-navbar {
+    min-height: 60px;
+  }
+  .site-navbar ul {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 60px);
+    left: 0;
+    top: 60px;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid #444;
+    background-color: $tertiary-color;
+    max-height: 0;
+    overflow: hidden;
+    transition: .3s;
+  }
+  .site-navbar ul li {
+    width: 100%;
+    text-align: center;
+  }
+  .site-navbar ul li a {
+    padding: 25px;
+  }
+  .site-navbar ul li a:hover {
+    background-color: rgba(255,255,255,.1);
+  }
+  .site-navbar ul.open {
+    max-height: 100vh;
+    overflow: visible;
+  }
+ 
+  /* navbar css for mobile end */
+}
+/* mobile breakpoint end */
+
+/* ========================
+Sections
+======================== */
+
+
+
+.splash .container {
+  padding-top: 25vh; /* No JS fallback*/
+  padding-bottom: 25vh; /* No JS fallback*/
+}
+
+.profile-image {
+  border-radius: 50%;
+  display: block;
+  max-width: 200px;
+  margin: 0 auto 1em;
+  width: 100%;
+}
+
+.splash h1 {
+  font-size: 3em;
+  margin-bottom: .15em;
+  text-align: center;
+}
+
+.splash .lead, .splash .continue {
+  display: block;
+  text-align: center;
+}
+
+.splash .lead {
+  font-size: 1.5em;
+  font-weight: 100;
+  margin-bottom: 1em;
+}
+
+.splash .continue {
+  font-size: 4em;
+}
+
+.splash .continue a {
+  border: 4px solid #fff;
+  border-radius: 100%;
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  width: 80px;
+}
+
+
+.intro .container, .features .container, .portfolio .container, .contact .container {
+  padding: 5em 0;
+}
+
+.intro, .features, .portfolio, .contact {
+  text-align: center;
+}
+
+.intro, .cf {
+  background-color: $tertiary-color;
+ font-family: $secondary-font;
+ color: $base-color;
+ 
+  
+}
+
+.intro a, .intro a:hover, .intro a:focus, .intro a:active, .intro a:visited {
+  color: $tertiary-color;
+}
+
+
+
+
+
+
+
+
+
+/* Portfolio section*/
+section {
+  color: $tertiary-color;
+
+  background-size: cover;
+  margin-top: 7em;
+}
+
+ #below-section {
+  color: #000;
+}
+
+#small-text {
+  color: white;
+}
+
+/*.portfolio-item {
+  overflow: hidden;
+  padding: 7px;
+  color: white;
+  height: 308px;
+}*/
+/*Portfolio items*/
+
+#portfolio .portfolio-item .img-responsive{
+  margin: 0 0 15px;
+  right: 0;
+ height: 250px;
+ width:400px;
+  
+}
+
+
+#portfolio .portfolio-item:hover {
+  transition: 0.5s;
+  box-shadow: 5px 10px 5px rgba(0,0,0,0.9);
+ 
+}
+
+#portfolio .portfolio-item .portfolio-link {
+  display: block;
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+  background: rgba(0, 0, 0, .7);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all ease .5s;
+  -webkit-transition: all ease .5s;
+  -moz-transition: all ease .5s,
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+  opacity: 1;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+  top: 50%;
+  margin-top: -12px;
+  color: #fff;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+  margin-top: -12px;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+  margin: 0;
+}
+
+#portfolio .portfolio-item .portfolio-caption {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: rgba(0,0,0, 0.8);
+  text-align: center;
+  padding: 25px;
+}
+
+#portfolio .portfolio-item .portfolio-caption h4 {
+  color: $base-color;
+  text-transform: none;
+  margin: 0;
+}
+
+#portfolio .portfolio-item .portfolio-caption p {
+  font-family: $secondary-font;
+ 
+  font-size: 13px;
+  margin: 0;
+}
+
+#portfolio * {
+  z-index: 2;
+}
+
+@media (min-width:767px) {
+  #portfolio .portfolio-item {
+    margin: 0 0 30px;
+  }
+}
+
+
+
+/* ========================
+Footer
+======================== */
+.footer {
+  background-color: $tertiary-color;
+  color:  #fff;
+  font-size: 1.3em;
+  text-align: center;
+  
+}
+
+.footer .container {
+  padding: 1em 0;
+  margin-top: 9em;
+}
+
+.footer a {
+  color: #fff;
+  margin: 0;
+}
+
+.footer a:last-of-type {
+  margin-right: 0;
+}
+
+
+  h2{
+    text-align: center;
+
+  }
+#agile p{
+  text-align: start;
+}
+
+/* ========================
+Media Queries
+======================== */
+
+@media (min-width: 768px) {
+  
+  nav .nav-toggle {
+    display: none;
+  }
+  
+  nav ul {
+    border: none;
+    clear: none;
+    display: inline-block !important;
+    float: right;
+    margin: 0;
+    padding: 25px 0;
+  }
+  
+  nav ul li {
+    border: none;
+    display: inline-block;
+    float: left;
+    margin-right: 1.5em;
+  }
+  
+  nav ul li:last-of-type {
+    margin-right: 0;
+  }
+  
+  nav ul li a {
+    padding: 0;
+  }
+  
+  .splash h1 {
+    font-size: 6em;
+  }
+  
+  .splash .lead {
+    font-size: 3em;
+  }
+  
+  .features .col-3 {
+    float: left;
+    margin: 2em 5% 0 0;
+    padding: 0 1em;
+    width: 30%;
+    display: inline;
+    
+  }
+  
+  .features .col-3:last-of-type {
+    margin-right: 0;
+  }
+  
+
+  
+
+  
+
+  
+}
+.hi{
+  display: inline-block;
+  margin-top: 0 auto; 
+  text-align: left;
+}
+.hi b{
+  margin-top: 15px;
+  font: 400 8vh "Vibur";
+  position: relative;
+}
+
+.fab, .far{
+  font-size: 2em;
+  color: $base-color;
+  text-shadow: 0 0 35px $base-color;
+  line-height: 1.5em;
+  letter-spacing: .3em;
+  
+}
+.col-3 ul{
+  list-style-type: none;
+  text-align: left;
+}
+#dev{
+ color: $tertiary-color;
+  animation: flicker .8s linear 3s;
+  animation-delay: 7s;
+  animation-fill-mode: both;
+}
+
+
+
+#hi span:nth-child(1){
+  animation: flicker 2s linear .5s;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+  color: $base-color;
+  text-shadow: $shadow-primary;
+}
+#hi span:nth-child(2){
+  animation: flicker 2.5s linear .5s;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+  color: $base-color;
+  text-shadow: $shadow-primary;   
+}
+#jerry span:nth-child(1){
+  animation: flicker 2s linear;
+  animation-delay: 3s;
+  animation-fill-mode: both;
+  color: $base-color;
+  text-shadow: $shadow-primary;    
+} 
+#jerry  span:nth-child(2){
+  animation: flicker 3s linear;
+  animation-delay: 4s;
+  animation-fill-mode: both;
+  color: $base-color;
+  text-shadow: $shadow-primary;   
+} 
+#jerry  span:nth-child(3){
+  animation: flicker linear infinite 2s;
+  animation-delay: 5s;
+  animation-fill-mode: both;
+  color: $sec-color;
+  text-shadow: $shadow-secondary;    
+} 
+
+#jerry span:nth-child(4){
+  animation: flicker 2s linear;
+  animation-delay: 4s;
+  animation-fill-mode: both;
+  color: $sec-color;
+  text-shadow: $shadow-secondary;    
+} 
+#jerry span:nth-child(5){
+  animation: flicker linear infinite 3s;
+  animation-delay: 4s;
+  animation-fill-mode: both;
+  color: $sec-color;
+  text-shadow: $shadow-secondary;    
+} 
+#jerry span:nth-child(6){
+  animation: flicker 2s linear;
+  animation-delay: 4.5s;
+  animation-fill-mode: both;
+  color: $sec-color;
+  text-shadow: $shadow-secondary;    
+} 
+
+
+@keyframes flicker {
+0% {
+  opacity: 0;
+}
+2% {
+  opacity:0.1; 
+  
+}
+4% {
+  opacity:1;
+}
+19% {
+  opacity:1;  
+}
+21% {
+  opacity:0.1;
+  filter: blur(.5px);  
+}
+23% {
+  opacity:1;
+    
+}
+80% {
+  opacity:1;
+  filter: blur(1px); 
+}
+83% {
+  opacity:0.4;  
+}
+87% {
+  opacity:1; 
+  filter: blur(2px);  
+}
+}
+*/
+
+
+/*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html, body{
+  height: 100vh;
+  width: 100vw;
+}
+body{
+  background-color: $tertiary-color;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+}
+.container{
+	max-width: 1600px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.about-section {
+  height: 100vh;
+  padding-top: 150px;
+  text-align: center;
+  background: #eee;
+}
+
+.services-section {
+  height: 100vh;
+  display: flex;
+  padding-top: 150px;
+  text-align: center;
+  background: #fff;
+}
+
+.contact-section {
+  height: 100vh;
+  padding-top: 150px;
+  text-align: center;
+  background: #eee;
+}
+.nav{
+	padding: 20px 0;
+  background-color: $tertiary-color;
+  
+ 
+}
+
+.nav-logo:link, .nav-logo:visited{
+	text-decoration: none;
+	color: $base-color;
+	letter-spacing: 2px;
+  font-size: 30px;
+  font-family: $primary-font;
+  color: $base-color;
+  text-shadow: $shadow-primary;
+}
+.nav-logo span{
+  color: $sec-color;
+  text-shadow: $shadow-secondary;
+}
+.nav-menu{
+		display: flex;
+		width: 50%;
+    justify-content: space-evenly;
+    font-family: $primary-font;
+    text-shadow: $shadow-primary;
+	@media only screen and (max-width: 600px){
+		position: fixed;
+		top: 0;
+		right:0;
+		background-color: $tertiary-color;
+		flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+		align-items: center;
+		transform: translateX(100%);
+    transition: all .5s ease;
+    }
+	}
+
+.nav-menu a{
+  font-size: 25px !important;
+  
+  &:hover{
+    color: $sec-color;
+    text-shadow: $shadow-secondary;
+    
+  }
+}
+
+.nav-menu.open{
+	@media only screen and (max-width: 600px){
+		transform: translateX(0);
+	}
+}
+
+.nav-menu-link{
+  
+  &:link, &:visited{
+    text-decoration: none;
+    color: $base-color;
+    transition: all .4s ease;
+    font-size: 18px;
+    &:hover{
+      color: $sec-color;
+    }
+}
+}
+.icon{
+	display: none;
+	@media only screen and (max-width: 600px){
+    display: block;
+    
+	}
+}
+
+.icon{
+			user-select: none;
+			color: $base-color;
+			transition: all .5s ease;
+      background: white;
+      position: absolute;
+      align-items: flex-end;
+      justify-content: center;
+      right: 45px;     
+      transform: translate(-50% -50%);
+      height: 10px;
+      cursor: pointer;
+}
+
+.burger{
+  width: 25px;
+  height: 2px;
+  background: $base-color;
+  box-shadow: $shadow-primary;
+  position: absolute;
+  display: flex;
+  transform: translate(-50% -50%);
+  cursor: pointer;
+  transition: .5s;
+}
+
+.burger:before,
+.burger:after{
+  content: '';
+  width: 25px;
+  height: 2px;
+  position: absolute;
+  background: $base-color;
+  box-shadow: $shadow-primary;
+  transition: .5s;
+}
+.burger:before{
+top: -8px;
+
+}
+.burger:after{
+  top: 8px;
+  }
+  
+.icon.active .burger{
+background: $tertiary-color;
+box-shadow: none;
+}
+
+.icon.active .burger:before{
+  top: 0;
+transform: rotate(45deg);
+background: $sec-color;
+box-shadow: $shadow-secondary;
+}
+
+.icon.active .burger:after{
+  top: 0;
+  transform: rotate(135deg);
+  background: $sec-color;
+  box-shadow: $shadow-secondary;
+  }
+
+
+
+  .intro {
+    text-align: center;
+    width: 85%;
+    height: 100%;
+    padding-top: 150px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    user-select: none;
+    background-color: $tertiary-color;
+    
+  }
+
+  .hi{
+    display: inline-block;
+    margin-top: 0 auto; 
+    text-align: left;
+  }
+  .hi b{
+    margin-top: 15px;
+    font: 400 8vh "Vibur";
+    position: relative;
+  }
+
+#hi, #jerry:before{
+  color: $tertiary-color;
+ 
+}
+
+  #dev{
+    color: $base-color;
+    text-shadow: $shadow-primary;
+  }
+  #hi span:nth-child(1){
+    animation: flicker 2s linear .5s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+    color: $base-color;
+    text-shadow: $shadow-primary;
+  }
+  #hi span:nth-child(2){
+    animation: flicker 2.5s linear .5s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+    color: $base-color;
+    text-shadow: $shadow-primary;   
+  }
+  #jerry span:nth-child(1){
+    animation: flicker 2s linear;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+    color: $base-color;
+    text-shadow: $shadow-primary;    
+  } 
+  #jerry  span:nth-child(2){
+    animation: flicker 3s linear;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+    color: $base-color;
+    text-shadow: $shadow-primary;   
+  } 
+  #jerry  span:nth-child(3){
+    animation: flicker linear infinite 2s;
+    animation-delay: 5s;
+    animation-fill-mode: both;
+    color: $sec-color;
+    text-shadow: $shadow-secondary;    
+  } 
+  
+  #jerry span:nth-child(4){
+    animation: flicker 2s linear;
+    animation-delay: 4s;
+    animation-fill-mode: both;
+    color: $sec-color;
+    text-shadow: $shadow-secondary;    
+  } 
+  #jerry span:nth-child(5){
+    animation: flicker linear infinite 3s;
+    animation-delay: 4s;
+    animation-fill-mode: both;
+    color: $sec-color;
+    text-shadow: $shadow-secondary;    
+  } 
+  #jerry span:nth-child(6){
+    animation: flicker 2s linear;
+    animation-delay: 4.5s;
+    animation-fill-mode: both;
+    color: $sec-color;
+    text-shadow: $shadow-secondary;    
+  } 
+
+@keyframes flicker {
+  0% {
+    opacity: 0;
+  }
+  2% {
+    opacity:0.1; 
+    
+  }
+  4% {
+    opacity:1;
+  }
+  19% {
+    opacity:1;  
+  }
+  21% {
+    opacity:0.1;
+    filter: blur(.5px);  
+  }
+  23% {
+    opacity:1;  
+  }
+  80% {
+    opacity:1;
+    filter: blur(1px); 
+  }
+  83% {
+    opacity:0.4;  
+  }
+  87% {
+    opacity:1; 
+    filter: blur(2px);  
+  }
+}*/

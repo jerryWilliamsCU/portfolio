@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Acme&family=Lato" >
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Document</title>
+</head>
+<body>
+    <header class="header-area"></header>
+        <!-- site-navbar start -->
+        <div class="navbar-area">
+          <div class="container">
+            <nav class="site-navbar">
+              <!-- site logo -->
+              <a href="#" class="site-logo">J<span>W</span></a>
+      
+              <!-- site menu/nav -->
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+      
+              <!-- nav-toggler for mobile version only -->
+              <button class="nav-toggler">
+                <span></span>
+              </button>
+            </nav>
+          </div>
+        </div>
+        <!-- navbar-area end -->
+       
+        <div class="container-fluid splash" id="splash">
+          <div class="container">
+            
+            <h1>Mr. Roboto</h1>
+            <span class="lead">Android Life Form</span>
+            
+          </div>
+        </div>
+        <div class="container-fluid intro" id="about">
+          <div class="container">
+            <h2>ABOUT ME</h2>
+            <p>I'm Jerry and I really enjoy front-end web development. I am based out of Orlando, Florida, but open to remote work opportunities.  </p>
+          </div>
+        </div>
+        
+        
+        <section id="services" class="sec-services">
+          <div class="container">
+            <h1>Services</h1>
+      
+            <hr />
+            <div class="row">
+              <div class="col-sm-4"  id="education">
+                <h2 class="h3">EDUCATION</h2>
+                <p><em>M.S. Technology Management</em><br>
+                Columbia University</p>
+                <hr class="hr">
+                <p><em>B.A. History</em><br>
+                  University of Central Florida
+                </p>
+              </div>
+      
+              <div class="col-sm-4"  id="tech">
+            
+  
+                <h2 class="h3">SKILLS</h2>
+      
+               <span> <p><i class= "fab fa-html5"></i><i class= "fab fa-html5"></i></p></span>
+             
+    
+              </div>
+            
+      
+              <div class="col-sm-4" id="agile">
+            
+  
+                <h2 class="h3" >AGILE</h2>
+      
+                <p>I also have expereince with the Agile framework as a certified Scrum Master. I possess the <em>PSM I</em>, <em>PSPO I</em>, and <em>PAL I</em> certifications.</p>
+              </div>
+            </div>
+          </div>
+           
+        </section>
+          <hr/>
+         <!-- Portfolio Grid Section -->
+         <a name="portfolio"></a>
+          <section id="portfolio" class="bg-light-gray bounds">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-lg-12 text-center">
+                          <h2 class="section-heading">PORTFOLIO</h2>
+                          
+                      </div>
+                  </div>
+ 
+  <section class="section" id="projects">
+    <div class="projects-wrapper">
+      <article class="project-card">
+        <a href="" target="_blank">
+          <img src="/img/airthere.PNG" alt="" />
+          <p>Login Form</p>
+        </a>
+      </article>
+    <article class="project-card">
+      <a href="https://codepen.io/GKlein/full/mErmZp/" target="_blank">
+        <img src="http://www.gregoryklein.fr/files/images/screenshot-codepen.io 2016-06-19 16-06-33.png" alt="" />
+        <p>Login Form</p>
+      </a>
+    </article>
+    <article class="project-card">
+      <a href="https://codepen.io/GKlein/full/qNaaGz/" target="_blank">
+        <img src="http://www.gregoryklein.fr/files/images/screenshot-codepen.io 2016-06-19 16-16-06.png" alt="" />
+        <p>Sliding Menu</p>
+      </a>
+    </article>
+    <article class="project-card">
+      <a href="https://codepen.io/GKlein/full/mErmZp/" target="_blank">
+        <img src="http://www.gregoryklein.fr/files/images/screenshot-codepen.io 2016-06-19 16-06-33.png" alt="" />
+        <p>Login Form</p>
+      </a>
+    </article>
+    <article class="project-card">
+      <a href="https://codepen.io/GKlein/full/mErmZp/" target="_blank">
+        <img src="http://www.gregoryklein.fr/files/images/screenshot-codepen.io 2016-06-19 16-06-33.png" alt="" />
+        <p>Login Form</p>
+      </a>
+    </article>
+    <article class="project-card">
+      <a href="https://codepen.io/GKlein/full/mErmZp/" target="_blank">
+        <img src="http://www.gregoryklein.fr/files/images/screenshot-codepen.io 2016-06-19 16-06-33.png" alt="" />
+        <p>Login Form</p>
+      </a>
+    </article>
+  
+  </section>
+<!--Icon Hover Effect 1-->
+<div class="hover-effect1">
+	<ul>
+		<li><a href="#." title="Facebook"><i class="fab fa-linkedin-in"></i></a></li>
+		<li><a href="#." title="Twitter"><i class="far fa-envelope"></i></a></li>
+		<li><a href="#." title="Google Plus"><i class="fab fa-github"></i></a></li>
+		
+	</ul>
+</div>
+
+  <!-- scripts -->
+  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="scripts/scripts.js"></script>
+  <!-- end scripts -->
+</body>
+</html>
